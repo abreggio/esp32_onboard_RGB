@@ -1,0 +1,16 @@
+[package]
+name = "blinky-SK6812"
+version = "0.1.0"
+authors = ["Andrea Breggion <abreggio@gmail.com>"]
+edition = "2025"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+esp-hal = { version = "1.0.0-beta.0", features = ["esp32c3", "unstable"] }
+esp-backtrace = { version = "0.15.1", features = [
+    "esp32c3",
+    "panic-handler",
+    "exception-handler",
+    "println",
+] }
+esp-println = { version = "0.13.1", features = ["esp32c3"] }
